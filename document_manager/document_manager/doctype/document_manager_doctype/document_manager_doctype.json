@@ -1,0 +1,52 @@
+{
+ "actions": [],
+ "autoname": "field:dm_doctype",
+ "creation": "2024-11-02 15:14:18.677983",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "dm_doctype",
+  "documents"
+ ],
+ "fields": [
+  {
+   "fieldname": "dm_doctype",
+   "fieldtype": "Link",
+   "label": "DM Doctype",
+   "options": "DocType",
+   "unique": 1
+  },
+  {
+   "fieldname": "documents",
+   "fieldtype": "Table",
+   "label": "Documents",
+   "options": "Document Manager Doctype Detail",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-11-12 16:14:31.542263",
+ "modified_by": "Administrator",
+ "module": "Document Manager",
+ "name": "Document Manager Doctype",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,55 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{document_name}-{####}",
+ "creation": "2024-11-02 15:18:26.418438",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "document_name",
+  "is_required",
+  "conditions"
+ ],
+ "fields": [
+  {
+   "fieldname": "document_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Document Name",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "description": "On submit system will check if file uploaded or not (Required On Submit)",
+   "fieldname": "is_required",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Is Required"
+  },
+  {
+   "columns": 2,
+   "description": "Simple Python Expression, Example: doc.company == 'Demo Company' and doc.invoice_type == 'internal'",
+   "fieldname": "conditions",
+   "fieldtype": "Code",
+   "in_list_view": 1,
+   "label": "Conditions",
+   "options": "PythonExpression",
+   "placeholder": " invoice_type == 'internal'"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-11-12 12:53:18.793102",
+ "modified_by": "Administrator",
+ "module": "Document Manager",
+ "name": "Document Manager Doctype Detail",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
